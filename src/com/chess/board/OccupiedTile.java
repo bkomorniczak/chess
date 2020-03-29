@@ -1,5 +1,9 @@
+package com.chess.board;
+
+import pieces.Piece;
+
 public class OccupiedTile extends Tile {
-    Piece pieceOnTile;
+   private Piece pieceOnTile;
 
     OccupiedTile(int coordinates, boolean isOccupied, Piece pieceOnTile ){
         super(coordinates,true);

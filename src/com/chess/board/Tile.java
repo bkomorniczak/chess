@@ -1,6 +1,10 @@
+package com.chess.board;
+
+import pieces.Piece;
+
 public abstract class Tile {
 
-    public int coordinates;
+    private int coordinates;
     boolean isOccupatied;
 
     public Tile(int coordinates, boolean isOccupatied) {
