@@ -2,10 +2,10 @@ package com.chess.board;
 
 import pieces.Piece;
 
-public class OccupiedTile extends Tile {
-   private Piece pieceOnTile;
+public final class OccupiedTile extends Tile {
+   private final Piece pieceOnTile;
 
-    OccupiedTile(int coordinates, boolean isOccupied, Piece pieceOnTile ){
+    public OccupiedTile(final int coordinates, final boolean isOccupied, final Piece pieceOnTile ){
         super(coordinates,true);
         this.pieceOnTile = pieceOnTile;
     }

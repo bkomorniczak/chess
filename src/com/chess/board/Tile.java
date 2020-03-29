@@ -4,10 +4,10 @@ import pieces.Piece;
 
 public abstract class Tile {
 
-    private int coordinates;
+    protected final int coordinates;
     boolean isOccupatied;
 
-    public Tile(int coordinates, boolean isOccupatied) {
+    public Tile(final int coordinates, final boolean isOccupatied) {
         this.coordinates = coordinates;
         this.isOccupatied = isOccupatied;
     }
