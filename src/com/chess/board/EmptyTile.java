@@ -8,7 +8,7 @@ import java.util.Map;
 
 public  final class EmptyTile extends Tile{
 
-    private EmptyTile(int coordinates, boolean isOccupied) {
+    public EmptyTile(int coordinates, boolean isOccupied) {
         super(coordinates, false);
     }
 
