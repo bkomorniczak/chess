@@ -3,7 +3,7 @@ package com.chess.board;
 import pieces.Piece;
 
 public final class OccupiedTile extends Tile {
-   private final Piece pieceOnTile;
+   private static Piece pieceOnTile;
 
     public OccupiedTile(final int coordinates, final boolean isOccupied, final Piece pieceOnTile ){
         super(coordinates,true);
