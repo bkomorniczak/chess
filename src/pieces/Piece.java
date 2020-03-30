@@ -1,24 +1,28 @@
 package pieces;
 
+import com.chess.board.Board;
+
 import java.util.Set;
 
 public abstract class Piece {
 
-    protected final int pieceCoordinates;
-    protected boolean isWhite;
+    protected static int pieceCoordinates;
+    protected static boolean isWhite;
 
     public Piece(int pieceCoordinates, boolean isWhite) {
         this.pieceCoordinates = pieceCoordinates;
         this.isWhite = isWhite;
     }
 
-    public int getPieceCoordinates() {
+    public static int getPieceCoordinates() {
         return pieceCoordinates;
     }
 
-    public boolean isWhite() {
+    public static boolean isWhite() {
         return isWhite;
     }
 
-    public abstract Set <Integer> calculateLegalMoves();
+   public  Set <Integer> calculateLegalMoves(Board board){
+        return null;
+   }
 }

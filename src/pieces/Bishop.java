@@ -1,3 +1,4 @@
+/*
 package pieces;
 
 import com.chess.board.Board;
@@ -17,3 +18,4 @@ public class Bishop extends Piece {
 
 
 }
+*/
